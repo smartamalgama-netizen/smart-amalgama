@@ -233,9 +233,278 @@ h1,h2,h3,.big,.imp strong,.eco-balance strong,.eco-wallet-total{font-family:Outf
 .lg:before{content:'';flex:none;width:27cqw;height:27cqw;background:url("data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 240 240%22%3E%3Cdefs%3E%3CradialGradient id=%22tb%22 cx=%22.35%22 cy=%22.25%22 r=%22.9%22%3E%3Cstop offset=%220%22 stop-color=%22%23fff%22/%3E%3Cstop offset=%22.6%22 stop-color=%22%23dcebe4%22/%3E%3Cstop offset=%221%22 stop-color=%22%2393b5a7%22/%3E%3C/radialGradient%3E%3ClinearGradient id=%22lf%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%221%22%3E%3Cstop offset=%220%22 stop-color=%22%23eaff8a%22/%3E%3Cstop offset=%221%22 stop-color=%22%237fb01a%22/%3E%3C/linearGradient%3E%3CradialGradient id=%22hg%22 cx=%22.35%22 cy=%22.3%22 r=%22.8%22%3E%3Cstop offset=%220%22 stop-color=%22%23fff%22/%3E%3Cstop offset=%22.45%22 stop-color=%22%23c9d3d1%22/%3E%3Cstop offset=%221%22 stop-color=%22%234f625c%22/%3E%3C/radialGradient%3E%3ClinearGradient id=%22rg%22 x1=%220%22 y1=%220%22 x2=%221%22 y2=%220%22%3E%3Cstop offset=%220%22 stop-color=%22%23d9f36a%22 stop-opacity=%22.1%22/%3E%3Cstop offset=%22.5%22 stop-color=%22%23d9f36a%22/%3E%3Cstop offset=%221%22 stop-color=%22%23d9f36a%22 stop-opacity=%22.1%22/%3E%3C/linearGradient%3E%3Cfilter id=%22bl%22%3E%3CfeGaussianBlur stdDeviation=%226%22/%3E%3C/filter%3E%3C/defs%3E%3Cellipse cx=%22120%22 cy=%22214%22 rx=%2266%22 ry=%229%22 fill=%22%23000%22 opacity=%22.35%22 filter=%22url(%23bl)%22/%3E%3Cellipse cx=%22120%22 cy=%22122%22 rx=%22108%22 ry=%2234%22 transform=%22rotate(-24 120 122)%22 fill=%22none%22 stroke=%22url(%23rg)%22 stroke-width=%225%22/%3E%3Cg transform=%22translate(27 14) scale(1.55)%22%3E%3Cpath d=%22M60 24c-14-8-32 2-30 22 2 16 8 20 10 38 1 8 6 10 9 2l5-18c1-3 5-3 6 0l5 18c3 8 8 6 9-2 2-18 8-22 10-38 2-20-16-30-30-22z%22 fill=%22url(%23tb)%22 stroke=%22%237fa597%22 stroke-width=%22.8%22/%3E%3Cellipse cx=%2246%22 cy=%2238%22 rx=%228%22 ry=%224.5%22 transform=%22rotate(-35 46 38)%22 fill=%22%23fff%22 opacity=%22.85%22/%3E%3C/g%3E%3Cpath d=%22M150 50c32-6 50 18 38 48-32 5-50-18-38-48z%22 fill=%22url(%23lf)%22/%3E%3Cpath d=%22M155 56l28 36%22 stroke=%22%235f8f12%22 stroke-width=%222.5%22 stroke-linecap=%22round%22/%3E%3Ccircle cx=%2234%22 cy=%22170%22 r=%2213%22 fill=%22url(%23hg)%22/%3E%3Ccircle cx=%2229%22 cy=%22165%22 r=%224%22 fill=%22%23fff%22 opacity=%22.8%22/%3E%3Ccircle cx=%22208%22 cy=%22150%22 r=%225%22 fill=%22%23d9f36a%22/%3E%3Ccircle cx=%2244%22 cy=%2292%22 r=%224%22 fill=%22%23d9f36a%22/%3E%3C/svg%3E") center/contain no-repeat}
 .lg:after{content:'Smart Amálgama';font:500 9.6cqw/1 Outfit,Manrope,sans-serif;letter-spacing:-.02em}
 #adm nav .lg,#usr nav .lg{filter:none!important}
-</style></head><body>
+</style><style id="a11y-css">
+/* ===== Acessibilidade e navegação por teclado ===== */
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip-a11y{position:fixed;left:12px;top:-80px;z-index:1000;background:#123F32;color:#fff;padding:12px 18px;border-radius:12px;font-weight:800;text-decoration:none;transition:top .15s}
+.skip-a11y:focus{top:12px}
+:focus-visible{outline:3px solid #123F32!important;outline-offset:2px!important}
+#tot :focus-visible,nav :focus-visible,.tb :focus-visible,.toast :focus-visible{outline-color:#D8F55B!important}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #123F32!important;outline-offset:1px!important;border-color:#123F32}
+#tot input:focus-visible,#tot select:focus-visible{outline-color:#D8F55B!important}
+[tabindex="-1"]:focus{outline:none!important}
+[role=button],[role=link]{cursor:pointer}
+/* telas ocultas do totem não podem receber foco pelo teclado */
+.scr{visibility:hidden;transition:opacity .6s,transform .6s,visibility 0s linear .6s}
+.scr.on{visibility:visible;transition-delay:0s}
+/* contraste de textos secundários (mínimo 4.5:1) */
+:root{--mu:#5a6862;--eco-muted:#58675f}
+#usr .mu,#adm .mu,#md .mu,#am .mu{color:#58675f!important}
+.eco-section-head p,.esec p,.imp span{color:#58675f!important}
+#am label{color:#58675f!important}
+.tb a{font-size:11px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0s!important;scroll-behavior:auto!important}}
+@media (forced-colors:active){:focus-visible{outline:3px solid CanvasText!important}.chip.on,nav a.on,.tb a.on{outline:2px solid Highlight}}
+</style>
+<style id="v4-css">
+/* ===== Smart Amálgama v4 — vidro líquido em verde (dark) ===== */
+:root{
+  --v-bg:#030c08;--v-ink:#ecf6ef;--v-mut:#b4c9bd;--v-faint:#86a193;
+  --v-lime:#c9f53b;--v-lime2:#e7ff80;--v-em:#2fb27f;--v-em2:#14684b;
+  --v-line:rgba(255,255,255,.14);--v-sh:0 18px 50px rgba(0,0,0,.45);
+  --bg:#040f0b;--tx:var(--v-ink);--mu:var(--v-mut);--ln:rgba(255,255,255,.13);
+  --eco-muted:var(--v-mut);--eco-ink:var(--v-ink);--eco-line:rgba(255,255,255,.12)
+}
+html{background:var(--v-bg);color-scheme:dark}
+body{background:var(--v-bg)!important;color:var(--v-ink)!important;font-size:15px;letter-spacing:0}
+body::before{content:'';position:fixed;inset:0;z-index:-2;pointer-events:none;background:
+  radial-gradient(60% 50% at 90% -8%,rgba(201,245,59,.26),transparent 62%),
+  radial-gradient(55% 50% at 0% 106%,rgba(47,178,127,.42),transparent 64%),
+  radial-gradient(45% 40% at 55% 45%,rgba(20,104,75,.30),transparent 72%),
+  linear-gradient(180deg,#04110c,#020a07)}
+body::after{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .7 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+::selection{background:var(--v-lime);color:#062015}
+:focus-visible{outline:3px solid var(--v-lime)!important;outline-offset:2px!important}
+#tot :focus-visible,nav :focus-visible,.tb :focus-visible,.toast :focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline-color:var(--v-lime)!important}
+.skip-a11y{background:var(--v-lime);color:#062015}
+
+/* ---------- textos ---------- */
+h1,h2,h3{font-family:Outfit,Manrope,sans-serif!important;font-weight:600!important;color:var(--v-ink)}
+#um h2,#am h2,#auth .form h2,.eco-section-head h2,.esec h3,.eco-reward-info h3,.step b,.faq summary,.eco-purchase-tile b,.eco-wallet-top,.eco-reward-bottom strong,.eco-photo-label,.cap .rw,.crumb b{color:var(--v-ink)!important}
+.sub,#am .sub,#auth .form .sub,.eco-section-head p,.esec p,.imp span,.step p,.faq details p,.eco-store-legal,.eco-store-note{color:var(--v-mut)!important}
+.mu,#usr .mu,#adm .mu,#md .mu,#am .mu,#am label,label,#auth .form label,.eco-empty,.crumb,th,#am th{color:var(--v-mut)!important}
+.crumb b,.eco-kicker,.eco-kicker.dark{color:var(--v-lime)!important}
+#am h2,#um h2{font-size:clamp(28px,3.2vw,44px)!important;letter-spacing:-.03em!important;line-height:1.05}
+.big,#am .big,.imp strong,.eco-wallet-total,.eco-balance strong{font-family:Outfit,Manrope,sans-serif!important;font-weight:600!important;letter-spacing:-.04em!important;background:linear-gradient(180deg,#fff 15%,#bff06b 120%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent!important}
+#am .big{font-size:clamp(38px,4vw,56px)!important}
+.c.lm .big,.c.lm,.c.lm *{-webkit-text-fill-color:currentColor}
+
+/* ---------- vidro: superfícies ---------- */
+.c,
+#am .c,
+#um .c,
+.step,
+.imp div,
+.faq details,
+.eco-reward-card,
+.eco-history-panel,
+.eco-purchase-tile,
+.eco-media-card,
+.eco-store-note,
+.etabs,
+.queue a,
+.eco-upload-panel,
+.eco-media-upload{
+  background:linear-gradient(145deg,rgba(255,255,255,.095),rgba(255,255,255,.025) 55%,rgba(255,255,255,.055))!important;
+  border:1px solid var(--v-line)!important;color:var(--v-ink);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.24),inset 0 -1px 0 rgba(0,0,0,.28),0 14px 40px rgba(0,0,0,.34)!important;
+  -webkit-backdrop-filter:blur(16px) saturate(1.5);backdrop-filter:blur(16px) saturate(1.5)}
+.c{border-radius:26px!important}
+#am .grid.k>.c{background:linear-gradient(145deg,rgba(255,255,255,.10),rgba(255,255,255,.03))!important}
+#am .grid.k>.c.dk{background:radial-gradient(80% 120% at 100% 110%,rgba(201,245,59,.30),transparent 60%),linear-gradient(145deg,rgba(47,178,127,.30),rgba(20,104,75,.18))!important}
+#am .grid.k>.c.lm{background:linear-gradient(180deg,#eaff8a,#c4f32f 60%,#a9de14)!important;color:#062015!important;border-color:rgba(255,255,255,.6)!important;box-shadow:inset 0 1.5px 0 rgba(255,255,255,.85),inset 0 -14px 24px rgba(80,130,0,.25),0 14px 40px rgba(201,245,59,.28)!important}
+#am .grid.k>.c.lm *,.c.lm .big{color:#062015!important;-webkit-text-fill-color:#062015!important;background:none!important}
+#am .grid.k{grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+#um .grid.g3:has(.bc){grid-template-columns:repeat(auto-fit,minmax(min(100%,205px),1fr))}
+@keyframes pu{0%{box-shadow:0 0 0 0 rgba(201,245,59,.30)}100%{box-shadow:0 0 0 22px rgba(201,245,59,0)}}
+.c.dk,#am .c.dk,#um .c.dk{background:radial-gradient(80% 120% at 100% 110%,rgba(201,245,59,.30),transparent 60%),linear-gradient(145deg,rgba(47,178,127,.30),rgba(20,104,75,.18))!important}
+.c.lm,#am .c.lm,#um .c.lm{background:linear-gradient(180deg,#eaff8a,#c4f32f 60%,#a9de14)!important;color:#062015!important;border-color:rgba(255,255,255,.6)!important;box-shadow:inset 0 1.5px 0 rgba(255,255,255,.85),inset 0 -14px 24px rgba(80,130,0,.25),0 14px 40px rgba(201,245,59,.28)!important}
+.c.lm .big,.c.lm .mu,.c.lm h3,.c.lm b{color:#062015!important;-webkit-text-fill-color:#062015;background:none}
+.c.lm .eco-stat .bubble{background:rgba(6,32,21,.12)!important;color:#062015!important;border-color:rgba(6,32,21,.2)}
+
+/* cartões de ação da tela inicial */
+#um .bc{border-radius:30px!important;min-height:250px!important;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s!important;color:var(--v-ink)!important}
+#um .bc:hover{transform:translateY(-6px)!important}
+#um .bc:nth-child(1){background:radial-gradient(90% 90% at 80% 110%,rgba(201,245,59,.34),transparent 62%),linear-gradient(150deg,rgba(47,178,127,.38),rgba(8,60,42,.50))!important}
+#um .bc:nth-child(2){background:linear-gradient(150deg,rgba(255,255,255,.12),rgba(255,255,255,.03))!important}
+#um .bc:nth-child(3){background:linear-gradient(180deg,#eaff8a,#c4f32f 62%,#a9de14)!important;color:#062015!important;border-color:rgba(255,255,255,.6)!important;box-shadow:inset 0 1.5px 0 rgba(255,255,255,.85),inset 0 -16px 28px rgba(80,130,0,.25),0 18px 44px rgba(201,245,59,.30)!important}
+#um .bc:nth-child(4){background:radial-gradient(90% 90% at 20% 110%,rgba(47,178,127,.38),transparent 62%),linear-gradient(150deg,rgba(255,255,255,.10),rgba(255,255,255,.03))!important}
+#um .bc .rg{background:rgba(255,255,255,.14)!important;color:var(--v-lime)!important;border:1px solid var(--v-line);box-shadow:inset 0 1px 0 rgba(255,255,255,.4)}
+#um .bc .go{background:rgba(255,255,255,.14)!important;border:1px solid var(--v-line);color:inherit!important}
+#um .bc:nth-child(3) .rg{background:rgba(6,32,21,.14)!important;color:#062015!important;border-color:rgba(6,32,21,.2)}
+#um .bc:nth-child(3) .go{background:#062015!important;color:var(--v-lime)!important}
+#um .bc:nth-child(3) p,#um .bc:nth-child(3) b{color:#062015!important}
+
+/* faixas de destaque (hero) */
+#um .uh,.eco-store-hero,#am .eco-store-hero,.banner,.eco-shop-intro,.eco-balance{
+  background:radial-gradient(62% 130% at 88% 118%,rgba(201,245,59,.38),transparent 62%),radial-gradient(50% 90% at 6% -25%,rgba(47,178,127,.38),transparent 60%),linear-gradient(140deg,#0a2c20,#05150f)!important;
+  border:1px solid var(--v-line)!important;border-radius:32px!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.26),inset 0 -60px 80px -50px rgba(201,245,59,.30),var(--v-sh)!important;color:#fff}
+#um .uh h2,.eco-store-copy h1,.banner h3{color:#fff!important}
+.eco-store-copy h1{font-size:clamp(34px,4.6vw,64px)!important;letter-spacing:-.04em!important;line-height:1}
+.eco-store-copy h1 em,.eco-store-copy em{color:var(--v-lime)!important}
+.eco-wallet-card{background:linear-gradient(135deg,rgba(201,245,59,.20),rgba(47,178,127,.10))!important;border-color:rgba(201,245,59,.30)!important}
+.eco-coin{background:radial-gradient(circle at 34% 28%,#f6ffb8,#c9f53b 52%,#6a9a0c)!important;border-color:#e9ff9c!important;color:#062015!important;box-shadow:0 0 70px rgba(201,245,59,.45),inset 0 -10px 22px rgba(60,100,0,.35)!important}
+.eco-coin-orbit{color:var(--v-lime)!important}
+
+/* ícones, selos e miniaturas */
+.eco-pill,.eco-count,.eco-history-status,.eco-stat .bubble,.tlx i,.eco-big-icon,.eco-media-icon,.eco-wallet-icon,.step .ico{background:rgba(201,245,59,.12)!important;color:var(--v-lime)!important;border:1px solid rgba(201,245,59,.26)}
+.step .ico{background:linear-gradient(145deg,rgba(47,178,127,.45),rgba(20,104,75,.35))!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.35)}
+.eco-reward-photo,.eco-product .photo,.eco-photo-placeholder,.eco-upload-preview,.eco-media-card>img{background:rgba(255,255,255,.05)!important;color:var(--v-lime)!important}
+.step:before{color:rgba(255,255,255,.07)!important}
+.step:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.3),0 24px 50px rgba(0,0,0,.45),0 0 40px rgba(201,245,59,.10)!important}
+.imp em{background:rgba(201,245,59,.16)!important;color:var(--v-lime)!important}.imp em.dn{background:rgba(255,120,100,.16)!important;color:#ffb9ad!important}
+.faq summary:after{color:var(--v-lime)}
+.eco-empty{background:rgba(255,255,255,.04)!important;border:1px dashed rgba(255,255,255,.22)!important}
+.eco-upload-panel,.eco-media-upload{border:1px dashed rgba(201,245,59,.35)!important}
+
+.eco-live{color:var(--v-lime)!important;font-size:10px!important;letter-spacing:.12em}
+.eco-wallet-foot,.eco-wallet-foot span,.eco-wallet-card small,.eco-purchase-tile small,.eco-hero-btn small{color:var(--v-mut)!important}
+.eco-wallet-foot b{color:var(--v-ink)!important}
+
+/* ---------- vidro líquido: botões ---------- */
+.btn,.eco-hero-btn{position:relative;isolation:isolate;overflow:hidden;border-radius:999px!important;min-height:44px;
+  background:linear-gradient(180deg,#eaff8a 0%,#c8f433 55%,#a9de14 100%)!important;color:#062015!important;border:1px solid rgba(255,255,255,.6)!important;
+  box-shadow:inset 0 1.5px 0 rgba(255,255,255,.9),inset 0 -9px 16px rgba(80,130,0,.28),0 10px 28px rgba(201,245,59,.32),0 2px 6px rgba(0,0,0,.35)!important;
+  font-weight:800;letter-spacing:.01em;transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s,filter .2s}
+.btn::before,.eco-hero-btn::before{content:'';position:absolute;inset:0;z-index:-1;border-radius:inherit;pointer-events:none;background:radial-gradient(120% 150% at var(--mx,28%) var(--my,-30%),rgba(255,255,255,.7),transparent 55%);opacity:.65;transition:opacity .2s}
+.btn:hover,.eco-hero-btn:hover{transform:translateY(-2px) scale(1.012);filter:saturate(1.12) brightness(1.04)}
+.btn:hover::before{opacity:1}
+.btn:active{transform:scale(.965)!important}
+.btn.d,#am .btn.d,#um .btn.d{background:linear-gradient(180deg,rgba(90,215,160,.42),rgba(20,104,75,.52))!important;color:#effff6!important;border:1px solid rgba(255,255,255,.30)!important;
+  -webkit-backdrop-filter:blur(14px) saturate(1.7);backdrop-filter:blur(14px) saturate(1.7);
+  box-shadow:inset 0 1.5px 0 rgba(255,255,255,.5),inset 0 -10px 18px rgba(0,0,0,.2),0 10px 28px rgba(0,0,0,.38)!important}
+.btn.d::before{background:radial-gradient(120% 150% at var(--mx,28%) var(--my,-30%),rgba(255,255,255,.45),transparent 55%)}
+#auth .btn.d{background:linear-gradient(180deg,#eaff8a 0%,#c8f433 55%,#a9de14 100%)!important;color:#062015!important;border-color:rgba(255,255,255,.6)!important;box-shadow:inset 0 1.5px 0 rgba(255,255,255,.9),inset 0 -9px 16px rgba(80,130,0,.28),0 12px 34px rgba(201,245,59,.38)!important}
+.modal .btn.d,#mc .btn.d{background:linear-gradient(180deg,#eaff8a 0%,#c8f433 55%,#a9de14 100%)!important;color:#062015!important;border-color:rgba(255,255,255,.6)!important;box-shadow:inset 0 1.5px 0 rgba(255,255,255,.9),inset 0 -9px 16px rgba(80,130,0,.28),0 10px 28px rgba(201,245,59,.32)!important}
+.btn.o,#am .btn.o,#um .btn.o,#tot .btn.o{background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.04))!important;color:var(--v-ink)!important;border:1px solid rgba(255,255,255,.24)!important;
+  -webkit-backdrop-filter:blur(14px) saturate(1.6);backdrop-filter:blur(14px) saturate(1.6);
+  box-shadow:inset 0 1.5px 0 rgba(255,255,255,.4),inset 0 -8px 16px rgba(0,0,0,.18),0 8px 22px rgba(0,0,0,.3)!important}
+.btn.o::before{background:radial-gradient(120% 150% at var(--mx,28%) var(--my,-30%),rgba(255,255,255,.4),transparent 55%)}
+.btn.r,#am .btn.r{background:linear-gradient(180deg,rgba(255,130,110,.20),rgba(255,90,70,.08))!important;color:#ffc2b8!important;border:1px solid rgba(255,140,120,.40)!important;box-shadow:inset 0 1.5px 0 rgba(255,255,255,.25),0 8px 22px rgba(0,0,0,.3)!important}
+.btn.s{min-height:38px;padding:8px 16px}
+.btn[disabled],.eco-redeem-btn:disabled{opacity:.5;filter:grayscale(.4);transform:none!important}
+.eco-redeem-btn:disabled{background:rgba(255,255,255,.08)!important;color:var(--v-faint)!important;box-shadow:none!important;border-color:var(--v-line)!important}
+.btn [data-ic],.eco-hero-btn [data-ic]{display:inline-grid;place-items:center}
+
+/* ---------- vidro líquido: menus ---------- */
+#usr nav,#adm nav{margin:14px 0 14px 14px!important;top:14px!important;height:calc(100vh - 28px)!important;min-height:0!important;border-radius:30px!important;
+  background:linear-gradient(170deg,rgba(255,255,255,.13),rgba(255,255,255,.035) 60%,rgba(201,245,59,.05))!important;border:1px solid rgba(255,255,255,.20)!important;
+  -webkit-backdrop-filter:blur(26px) saturate(1.8);backdrop-filter:blur(26px) saturate(1.8);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.42),inset 0 0 40px rgba(201,245,59,.04),var(--v-sh)!important;
+  overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;padding:22px 12px!important}
+#usr nav::-webkit-scrollbar,#adm nav::-webkit-scrollbar{display:none}
+#usr nav a,#adm nav a{position:relative;isolation:isolate;overflow:hidden;color:#d9eadf!important;border-radius:18px!important;padding:13px 15px!important;min-height:46px;font-size:14px!important;font-weight:700;border:1px solid transparent;transition:background .25s,transform .25s,border-color .25s}
+#usr nav a:hover,#adm nav a:hover{background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.05))!important;border-color:rgba(255,255,255,.18);color:#fff!important;transform:translateX(2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.3)!important}
+#usr nav a.on,#adm nav a.on,#usr .tb a.on{background:linear-gradient(180deg,#eaff8a,#c8f433 58%,#a9de14)!important;color:#062015!important;border-color:rgba(255,255,255,.6);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.9),inset 0 -7px 12px rgba(80,130,0,.25),0 8px 24px rgba(201,245,59,.30)!important}
+#usr nav a::before,#adm nav a::before,.tb a::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(120% 160% at var(--mx,30%) var(--my,-40%),rgba(255,255,255,.35),transparent 55%);opacity:0;transition:opacity .2s}
+#usr nav a:hover::before,#adm nav a:hover::before,.tb a:hover::before{opacity:.8}
+#usr nav .lg,#adm nav .lg{width:158px!important;margin:4px auto 18px!important;color:#fff}
+#adm nav a{padding:10px 14px!important;min-height:42px}#adm nav .nh{padding:10px 12px 4px}
+#adm nav .nh{color:var(--v-faint)}
+.nbg{background:var(--v-lime)!important;color:#062015!important}
+#adm nav a.on .nbg{background:#062015!important;color:var(--v-lime)!important}
+#adm nav small,#usr nav small{border-top:1px solid rgba(255,255,255,.14)!important;color:var(--v-faint)!important}
+.tb a.on{background:linear-gradient(180deg,#eaff8a,#c8f433 58%,#a9de14)!important;color:#062015!important;box-shadow:inset 0 1.5px 0 rgba(255,255,255,.9),0 6px 18px rgba(201,245,59,.30)!important}
+.tb{left:12px!important;right:12px!important;bottom:calc(12px + env(safe-area-inset-bottom,0px))!important;border-radius:30px;padding:8px!important;
+  background:linear-gradient(170deg,rgba(255,255,255,.16),rgba(255,255,255,.05))!important;border:1px solid rgba(255,255,255,.24);
+  -webkit-backdrop-filter:blur(26px) saturate(1.8);backdrop-filter:blur(26px) saturate(1.8);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),0 18px 44px rgba(0,0,0,.5)}
+.tb a{position:relative;isolation:isolate;overflow:hidden;color:#d9eadf!important;font-size:11px!important;min-width:48px;min-height:48px;justify-content:center;border-radius:22px!important}
+.etabs{border-radius:999px!important;padding:5px}
+.etabs button{color:var(--v-mut)!important;border-radius:999px!important;min-height:40px}
+.etabs button.on{background:linear-gradient(180deg,#eaff8a,#c8f433 60%,#a9de14)!important;color:#062015!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 6px 18px rgba(201,245,59,.28)!important}
+.chip,.chip2{min-height:44px;display:inline-flex;align-items:center;border-radius:999px!important;background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.04))!important;border:1px solid rgba(255,255,255,.22)!important;color:var(--v-ink)!important;
+  -webkit-backdrop-filter:blur(12px) saturate(1.5);backdrop-filter:blur(12px) saturate(1.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.35);transition:transform .2s,background .2s}
+.chip:hover{transform:translateY(-1px)}
+.chip.on{background:linear-gradient(180deg,#eaff8a,#c8f433 60%,#a9de14)!important;color:#062015!important;border-color:rgba(255,255,255,.6)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 6px 18px rgba(201,245,59,.28)!important}
+.eco-shop-tabs button{background:rgba(255,255,255,.07)!important;color:var(--v-mut)!important;border:1px solid var(--v-line)!important}
+.queue a{border-radius:999px!important;color:var(--v-ink)!important}
+.queue a:hover{background:linear-gradient(180deg,#eaff8a,#c8f433)!important;color:#062015!important}
+.tag{background:rgba(255,255,255,.10)!important;color:var(--v-ink)!important;border:1px solid var(--v-line)}
+.tag.ok{background:rgba(5,28,19,.62)!important;color:#dcff6e!important;border-color:rgba(201,245,59,.45)}
+.tag.bad{background:rgba(255,120,100,.14)!important;color:#ffb9ad!important;border-color:rgba(255,140,120,.35)}
+
+/* ---------- formulários e tabelas ---------- */
+input,select,textarea,#am input,#am select,#am textarea,#um input,#um select,#auth .form input,#setup input,#setup select,#mc input,#mc select,#mc textarea{
+  background:rgba(255,255,255,.065)!important;color:var(--v-ink)!important;border:1px solid rgba(255,255,255,.20)!important;border-radius:16px!important;min-height:48px;
+  box-shadow:inset 0 2px 8px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.06);transition:border-color .2s,box-shadow .2s,background .2s}
+input::placeholder,textarea::placeholder{color:rgba(236,246,239,.50)}
+input:focus,select:focus,textarea:focus{border-color:var(--v-lime)!important;background:rgba(201,245,59,.06)!important;box-shadow:inset 0 2px 8px rgba(0,0,0,.28),0 0 0 4px rgba(201,245,59,.16)!important}
+select option{background:#0b1f17;color:var(--v-ink)}
+input:-webkit-autofill{-webkit-text-fill-color:var(--v-ink);-webkit-box-shadow:0 0 0 40px #0c261b inset}
+label{font-size:12px!important;letter-spacing:.06em!important}
+#am .tw,.tw{border-radius:20px;border:1px solid var(--v-line)}
+#am table th,th{background:rgba(255,255,255,.06)!important}
+#am td,td{border-top:1px solid rgba(255,255,255,.08)!important;border-bottom:0!important;color:var(--v-ink)}
+tbody tr:hover td,#am tbody tr:hover td{background:rgba(201,245,59,.06)!important}
+.r{border-top-color:rgba(255,255,255,.10)!important}
+.bar{background:rgba(255,255,255,.10)!important}.bar b{background:linear-gradient(90deg,var(--v-em),var(--v-lime))!important;box-shadow:0 0 14px rgba(201,245,59,.4)}.bar.w b{background:linear-gradient(90deg,#ff8a70,#ff5a40)!important}
+.cap .tr{background:rgba(255,255,255,.09)!important}
+.bars div{color:var(--v-mut)!important}.bars b{background:linear-gradient(180deg,rgba(201,245,59,.55),rgba(47,178,127,.55))!important}
+.bars div:last-child b{background:linear-gradient(180deg,#eaff8a,#c8f433)!important;outline:0!important;box-shadow:0 0 26px rgba(201,245,59,.55)}
+.st i{background:rgba(255,255,255,.14)}.st i.on{background:var(--v-lime)}
+.tl li{border-left-color:rgba(201,245,59,.45)}.tl li:before{background:var(--v-lime)}
+.tlx li{border-top-color:rgba(255,255,255,.09)!important}
+.crumb{color:var(--v-faint)!important}
+
+/* ---------- janelas e avisos ---------- */
+.modal{background:rgba(2,9,6,.62)!important;-webkit-backdrop-filter:blur(10px) saturate(1.2);backdrop-filter:blur(10px) saturate(1.2)}
+#md>div,#mc{background:linear-gradient(150deg,rgba(24,62,47,.94),rgba(6,22,15,.96))!important;border:1px solid rgba(255,255,255,.22)!important;border-radius:30px!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 40px 90px rgba(0,0,0,.6)!important;color:var(--v-ink)}
+.toast{background:linear-gradient(180deg,rgba(233,255,138,.26),rgba(201,245,59,.14))!important;color:var(--v-lime2)!important;border:1px solid rgba(201,245,59,.45);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);box-shadow:inset 0 1px 0 rgba(255,255,255,.4),0 18px 44px rgba(0,0,0,.5)}
+
+/* ---------- entrada (landing) ---------- */
+#auth{background:transparent!important;grid-template-columns:minmax(0,1.2fr) minmax(400px,.8fr)!important}
+#auth .hero{background:transparent!important;padding:clamp(28px,4.5vw,64px)!important;overflow:hidden}
+#auth .hero:after{background:radial-gradient(circle at 80% 20%,rgba(201,245,59,.18) 0 1px,transparent 2px)!important;background-size:26px 26px!important;-webkit-mask:radial-gradient(70% 70% at 50% 40%,#000,transparent);mask:radial-gradient(70% 70% at 50% 40%,#000,transparent)}
+#auth .hero:before{content:'';position:absolute;left:-12%;right:-12%;bottom:-20%;height:66%;background:radial-gradient(55% 62% at 46% 88%,rgba(201,245,59,.62),rgba(47,178,127,.38) 44%,transparent 74%);filter:blur(30px);pointer-events:none}
+#auth .hero .lg{color:#fff;width:min(300px,70%)!important}
+#auth .hero h1{font-size:clamp(42px,5.6vw,92px)!important;line-height:.98!important;letter-spacing:-.045em!important;max-width:9.5em;background:linear-gradient(180deg,#fff 25%,#d4f97c 105%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent!important}
+#auth .hero p{display:inline-flex;align-self:flex-start;margin-top:22px!important;padding:9px 16px;border-radius:999px;color:var(--v-lime)!important;letter-spacing:.16em!important;
+  background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.22);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:inset 0 1px 0 rgba(255,255,255,.35)}
+#auth .hero .art{right:5%!important;left:auto!important;top:15%!important;bottom:auto!important;width:min(340px,32%)!important;opacity:1!important;filter:drop-shadow(0 30px 70px rgba(201,245,59,.35))}
+#auth .form{background:transparent!important}
+#auth .form>div{border-radius:34px!important;border:1px solid rgba(255,255,255,.24)!important;
+  background:linear-gradient(150deg,rgba(255,255,255,.15),rgba(255,255,255,.04) 60%,rgba(201,245,59,.05))!important;
+  -webkit-backdrop-filter:blur(28px) saturate(1.8);backdrop-filter:blur(28px) saturate(1.8);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.5),inset 0 0 50px rgba(201,245,59,.05),0 40px 100px rgba(0,0,0,.55)!important}
+#auth .form h2{font-size:38px!important;color:#fff!important}
+#setup{background:transparent!important}
+#setup .box{background:linear-gradient(150deg,rgba(255,255,255,.14),rgba(255,255,255,.04))!important;border:1px solid rgba(255,255,255,.22)!important;border-radius:34px!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.4),0 40px 90px rgba(0,0,0,.5)}
+.stp i.on,.ring.ok{background:linear-gradient(180deg,#eaff8a,#c8f433)!important;color:#062015!important}
+
+/* ---------- totem ---------- */
+#tot{background:radial-gradient(75% 60% at 50% -5%,#15563f 0,#062018 58%,#030c08 100%)!important}
+#tot:before{content:'';position:absolute;left:-10%;right:-10%;bottom:-14%;height:52%;z-index:-1;background:radial-gradient(50% 60% at 50% 100%,rgba(201,245,59,.55),rgba(47,178,127,.30) 45%,transparent 72%);filter:blur(26px);pointer-events:none}
+#tot h1{font-weight:600!important;letter-spacing:-.03em!important}
+#tot .lg{color:#fff}
+#tot .keys button{height:76px;border-radius:26px;background:linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.26);color:#fff;
+  -webkit-backdrop-filter:blur(14px) saturate(1.6);backdrop-filter:blur(14px) saturate(1.6);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.45),inset 0 -8px 14px rgba(0,0,0,.2),0 8px 20px rgba(0,0,0,.35);transition:transform .15s,background .15s}
+#tot .keys button:active{background:linear-gradient(180deg,#eaff8a,#c8f433);color:#062015;transform:scale(.94)}
+#tot .disp{background:linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.22);border-radius:26px;color:var(--v-lime2);text-shadow:0 0 22px rgba(201,245,59,.5);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.4)}
+#tot select.big2{background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.05))!important;border:1px solid rgba(255,255,255,.24)!important;border-radius:26px!important;color:#fff!important}
+#tot .box,.box{background:linear-gradient(150deg,rgba(255,255,255,.14),rgba(255,255,255,.04))!important;border:1px solid rgba(255,255,255,.22);border-radius:30px;-webkit-backdrop-filter:blur(18px) saturate(1.6);backdrop-filter:blur(18px) saturate(1.6);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.4),0 20px 50px rgba(0,0,0,.4)}
+.ring{background:linear-gradient(150deg,rgba(255,255,255,.18),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.26);box-shadow:inset 0 1.5px 0 rgba(255,255,255,.45),0 0 60px rgba(201,245,59,.18)}
+#tot .tot-small{color:#fff!important}
+.qr-panel{background:#fff!important}
+#tot .chip2,.tot-small{background:linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,.05))!important;border:1px solid rgba(255,255,255,.24)!important}
+#eprog span{background:rgba(255,255,255,.10)!important;color:#ffffffb3!important;border:1px solid var(--v-line)}
+#eprog span.on{background:linear-gradient(180deg,#eaff8a,#c8f433)!important;color:#062015!important}
+#tot .scr.on h1:first-of-type{text-shadow:0 0 40px rgba(201,245,59,.18)}
+
+/* ---------- adaptação ---------- */
+@media(max-width:980px){#adm nav{height:auto!important;margin:10px!important;top:10px!important;border-radius:24px!important;padding:10px!important}#adm nav a{min-height:44px}}
+@media(max-width:860px){
+  #auth{grid-template-columns:1fr!important}#auth .hero{min-height:330px}#auth .hero h1{font-size:clamp(38px,11vw,56px)!important}#auth .hero .art{width:84px!important;top:5%!important;right:5%!important}
+  #um{padding:20px 14px 130px!important}#um .bc{min-height:190px!important}
+}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  .c,#usr nav,#adm nav,.tb,#auth .form>div,.btn.o,.btn.d,.chip{background:rgba(14,40,30,.94)!important}}
+@media(prefers-reduced-transparency:reduce){
+  .c,#usr nav,#adm nav,.tb,#auth .form>div,.btn.o,.btn.d,.chip,#tot .box{background:rgba(14,40,30,.96)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}}
+</style>
+</head><body>
 <section id="auth"><div class="hero"><span class="lg"></span><div style="position:relative"><h1 class="up">O destino correto<br>começa com você.</h1><p class="up d1" style="font-weight:700;letter-spacing:.14em;font-size:12px">ODONTOLOGIA SUSTENTÁVEL</p></div><div class="art fl" data-art="totem"></div></div>
-<div class="form"><div><h2 class="up">Entrar</h2><p class="sub up d1">Entre com seu e-mail e senha cadastrados no Smart Amálgama.</p><label>E-MAIL</label><input id="lu" autocomplete="username"><label>SENHA</label><input id="lp" type="password" onkeydown="if(event.key=='Enter')login()"><button class="btn d x" style="width:100%" onclick="login()"><span data-ic="lock"></span>Entrar</button>
+<div class="form"><div><h2 class="up">Entrar</h2><p class="sub up d1">Entre com seu e-mail e senha cadastrados no Smart Amálgama.</p><label>E-MAIL</label><input id="lu" autocomplete="username"><label>SENHA</label><input id="lp" type="password" autocomplete="current-password" onkeydown="if(event.key=='Enter')login()"><button class="btn d x" style="width:100%" onclick="login()"><span data-ic="lock"></span>Entrar</button>
 <div style="margin-top:12px"><button class="btn o" style="width:100%" onclick="regU()"><span data-ic="user" data-s="22"></span>Criar conta</button></div>
 <p class="mu" style="margin-top:14px">Acesso protegido por autenticação. Use seu e-mail e senha cadastrados no Smart Amálgama.</p></div></div></section>
 <section id="setup" class="hid"><div class="box"><div class="stp" id="sp"></div><div id="sb"></div></div></section>
@@ -253,7 +522,7 @@ h1,h2,h3,.big,.imp strong,.eco-balance strong,.eco-wallet-total{font-family:Outf
 <section class="scr" id="s7"><div class="ring"><span data-ic="user" data-s="64"></span></div><h1>CRO não cadastrado.</h1><p>O totem só pode ser usado por CRO cadastrado e aprovado no site Smart Amálgama. Escaneie o QR, crie sua conta e aguarde a aprovação.</p><div id="registration-qr" class="qr-panel"></div><p class="cro-label" id="registration-cro"></p><p class="tot-note">Escaneie para criar sua conta no celular. Depois, continue aqui.</p><div class="tot-actions"><button class="btn o" onclick="to(2)"><span data-ic="back"></span>Voltar</button><button class="btn" id="registration-recheck" onclick="ident()">Já me cadastrei<span data-ic="arr"></span></button></div></section>
 <section class="scr" id="s8"><div class="ring"><span data-ic="alert" data-s="64"></span></div><h1>Registro pendente.</h1><p id="save-error" role="alert"></p><button class="btn" onclick="done()">Tentar salvar novamente</button></section>
 <button id="pix-control" class="tot-small hid" aria-label="Controle de pagamento" title="Controle de pagamento" onclick="document.getElementById('hw').classList.toggle('hid')"><span data-ic="gear" data-s="18"></span></button><div id="msg" role="alert"></div><div id="hw" class="hid"></div></div>
-<div class="modal" id="md" onclick="if(event.target==this)cm()"><div class="c" id="mc"></div></div><div class="toast" id="ts"></div>
+<div class="modal" id="md" onclick="if(event.target==this)cm()"><div class="c" id="mc"></div></div><div class="toast" id="ts" role="status" aria-live="polite" aria-atomic="true"></div>
 <script>
 // Endereço público do site: o QR do totem sempre aponta para a tela de cadastro aqui.
 const PUBLIC_SITE_URL='https://smart-amalgama.vercel.app/';
@@ -262,7 +531,7 @@ function rewardStore(){const l=ME.loyalty||{wallet:{balance:0},transactions:[],r
 async function redeemReward(id){if(!confirm('Deseja solicitar o resgate desta recompensa? Os Ecocoins serão descontados agora.'))return;try{const {error}=await sb.rpc('redeem_reward',{p_reward_id:id});if(error)cloudError(error);await loadUserLoyalty();ug('rewards');toast('Resgate solicitado!')}catch(e){toast(e.message)}}
 function adminConfig(){const x=DB.settings||{};return`<div class="eco-head"><div><h2>Configurações do Smart Amálgama</h2><p class="sub">Defina as regras do programa de fidelidade sem alterar o código.</p></div><span class="eco-pill">Configuração global</span></div><div class="c" style="max-width:760px"><h3>Cashback em Ecocoins</h3><p class="mu">Os Ecocoins são uma unidade de recompensa, não dinheiro sacável. A taxa abaixo define quantos Ecocoins cada R$ 1 em compra gera.</p><div class="eco-form"><div><label>PROGRAMA ATIVO</label><select id="lc_enabled"><option value="true" ${x.enabled!==false?'selected':''}>Ativado</option><option value="false" ${x.enabled===false?'selected':''}>Desativado</option></select></div><div><label>ECOCOINS POR R$ 1 EM COMPRAS</label><input id="lc_rate" type="number" min="0" step="0.1" value="${x.points_per_real??1}"></div><div><label>ECOCOINS POR DESCARTE CONCLUÍDO</label><input id="lc_disposal" type="number" min="0" step="1" value="${x.disposal_points??100}"></div><div><label>MÍNIMO DE ECOCOINS PARA RESGATE</label><input id="lc_min" type="number" min="0" step="1" value="${x.minimum_redemption??100}"></div><div><label>BÔNUS DE ECOCOINS DE BOAS-VINDAS</label><input id="lc_welcome" type="number" min="0" step="1" value="${x.welcome_points??0}"></div><div><label>VALIDADE DOS PONTOS (DIAS, VAZIO = SEM PRAZO)</label><input id="lc_expire" type="number" min="1" value="${x.points_expire_days||''}" placeholder="Sem expiração"></div></div><button class="btn d" style="margin-top:18px" onclick="saveLoyaltySettings()">Salvar regras</button></div><div class="c" style="max-width:760px;margin-top:16px"><h3>Como o sistema funciona</h3><p>• Compras: o usuário informa o código e o valor do pedido; o administrador confere e aprova para liberar os Ecocoins.</p><p>• Resgates: o usuário troca Ecocoins por recompensas cadastradas na loja.</p><p>• Descartes: o crédito é feito no servidor quando o registro do descarte concluído é criado pelo fluxo autorizado do totem.</p></div>`}
 async function saveLoyaltySettings(){const row={id:1,enabled:$('lc_enabled').value==='true',points_per_real:Number($('lc_rate').value),disposal_points:Number($('lc_disposal').value),minimum_redemption:Number($('lc_min').value),welcome_points:Number($('lc_welcome').value),points_expire_days:$('lc_expire').value?Number($('lc_expire').value):null,updated_at:new Date().toISOString()};if(Object.values(row).some(v=>typeof v==='number'&&(!Number.isFinite(v)||v<0))){toast('Confira os valores.');return}try{const {error}=await sb.from('loyalty_settings').upsert(row);if(error)cloudError(error);await loadCloudWorkspace(true);ag('config');toast('Regras salvas.')}catch(e){toast(e.message)}}
-function adminRewards(){return`<div class="eco-section-head"><div><span class="eco-kicker dark">CLUBE SMART AMÁLGAMA</span><h2>Loja de recompensas</h2><p>Monte uma vitrine bonita, com fotos, Ecocoins e estoque atualizado.</p></div><div class="eco-actions"><button class="btn o" onclick="ag('images')">Biblioteca de imagens</button><button class="btn d" onclick="rewardEditor()">＋ Nova recompensa</button></div></div><div class="eco-reward-grid admin">${(DB.rewards||[]).map(r=>`<article class="eco-reward-card"><div class="eco-reward-photo">${r.image_url?`<img src="${escapeHtml(r.image_url)}">`:'<div class="eco-photo-placeholder">✧<small>Smart Amálgama</small></div>'}</div><div class="eco-reward-info"><h3>${escapeHtml(r.name)}</h3><p>${escapeHtml(r.description||'')}</p><div class="eco-reward-bottom"><div><strong>${Number(r.points_price).toLocaleString('pt-BR')}</strong><small>Ecocoins</small></div><span>Estoque: ${r.stock} · ${r.active?'Ativa':'Inativa'}</span></div><button class="eco-redeem-btn" onclick="rewardEditor('${r.id}')">Editar recompensa →</button></div></article>`).join('')||'<div class="eco-empty">Nenhuma recompensa cadastrada.</div>'}</div>`}
+function adminRewards(){return`<div class="eco-section-head"><div><span class="eco-kicker dark">CLUBE SMART AMÁLGAMA</span><h2>Loja de recompensas</h2><p>Monte uma vitrine bonita, com fotos, Ecocoins e estoque atualizado.</p></div><div class="eco-actions"><button class="btn o" onclick="ag('images')">Biblioteca de imagens</button><button class="btn d" onclick="rewardEditor()">＋ Nova recompensa</button></div></div><div class="eco-reward-grid admin">${(DB.rewards||[]).map(r=>`<article class="eco-reward-card"><div class="eco-reward-photo">${r.image_url?`<img src="${escapeHtml(r.image_url)}" alt="${escapeHtml(r.name)}" loading="lazy">`:'<div class="eco-photo-placeholder">✧<small>Smart Amálgama</small></div>'}</div><div class="eco-reward-info"><h3>${escapeHtml(r.name)}</h3><p>${escapeHtml(r.description||'')}</p><div class="eco-reward-bottom"><div><strong>${Number(r.points_price).toLocaleString('pt-BR')}</strong><small>Ecocoins</small></div><span>Estoque: ${r.stock} · ${r.active?'Ativa':'Inativa'}</span></div><button class="eco-redeem-btn" onclick="rewardEditor('${r.id}')">Editar recompensa →</button></div></article>`).join('')||'<div class="eco-empty">Nenhuma recompensa cadastrada.</div>'}</div>`}
 function adminImages(){return`<div class="eco-section-head"><div><span class="eco-kicker dark">IDENTIDADE VISUAL</span><h2>Biblioteca de imagens</h2><p>Envie fotos para usar nas recompensas da loja. Os arquivos ficam armazenados no Supabase.</p></div></div><div class="eco-media-upload"><div class="eco-media-icon">↥</div><div><h3>Adicionar novas imagens</h3><p>JPG, PNG ou WebP · até 5 MB por arquivo</p><input id="eco_media_files" type="file" accept="image/png,image/jpeg,image/webp" multiple><button class="btn d" onclick="uploadMediaLibrary()">Enviar imagens</button></div></div><div class="eco-section-head" style="margin-top:28px"><div><h3>Imagens enviadas</h3><p>Selecione uma imagem para copiar seu endereço e usar em uma recompensa.</p></div><button class="btn o" onclick="loadImageLibrary()">Atualizar biblioteca</button></div><div id="eco_media_grid" class="eco-media-grid"><div class="eco-empty">Carregando imagens…</div></div>`}
 async function loadImageLibrary(){const target=$('eco_media_grid');if(!target)return;try{const {data,error}=await sb.storage.from('ecodonto-rewards').list('recompensas',{limit:100,sortBy:{column:'created_at',order:'desc'}});if(error)cloudError(error);const files=(data||[]).filter(x=>x.name);if(!files.length){target.innerHTML='<div class="eco-empty">Sua biblioteca ainda está vazia. Envie a primeira imagem acima.</div>';return}target.innerHTML=files.map(f=>{const path='recompensas/'+f.name;const {data:u}=sb.storage.from('ecodonto-rewards').getPublicUrl(path);return`<article class="eco-media-card"><img src="${escapeHtml(u.publicUrl)}" alt="${escapeHtml(f.name)}" loading="lazy"><div><b>${escapeHtml(f.name)}</b><button class="btn s o" onclick="useMediaInReward('${encodeURIComponent(u.publicUrl)}')">Usar em recompensa</button></div></article>`}).join('')}catch(e){target.innerHTML=`<div class="eco-empty">Não foi possível carregar a biblioteca: ${escapeHtml(e.message)}</div>`}}
 async function uploadMediaLibrary(){const input=$('eco_media_files'),files=[...(input?.files||[])];if(!files.length){toast('Selecione ao menos uma imagem.');return}for(const file of files){if(!/^image\/(png|jpeg|webp)$/.test(file.type)||file.size>5*1024*1024){toast('Cada imagem deve ser JPG, PNG ou WebP e ter até 5 MB.');return}}const btn=$('am').querySelector('button[onclick="uploadMediaLibrary()"]');if(btn){btn.disabled=true;btn.textContent='Enviando…'}try{for(const file of files){const safe=file.name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-zA-Z0-9._-]/g,'-');const path=`recompensas/${Date.now()}-${Math.random().toString(36).slice(2,7)}-${safe}`;const {error}=await sb.storage.from('ecodonto-rewards').upload(path,file,{cacheControl:'3600',upsert:false,contentType:file.type});if(error)cloudError(error)}input.value='';toast('Imagens enviadas com sucesso.');await loadImageLibrary()}catch(e){toast(e.message)}finally{if(btn){btn.disabled=false;btn.textContent='Enviar imagens'}}}
@@ -401,8 +670,8 @@ function pc(p){return`<div class="c pcard up"><div class="im ph" style="${IMG.cl
 function mapv(){const L=places().filter(p=>(MF=='all'||p.t==MF)&&p.km<=KM&&(!Q||(p.n+p.e).toLowerCase().includes(Q.toLowerCase())));
 return`<h2>Mapa de descarte</h2><p class="sub">Pontos e totens ativos cadastrados. O desenho do mapa é ilustrativo; use a rota para abrir a localização.</p><div style="display:flex;gap:8px;flex-wrap:wrap"><input style="flex:1;min-width:200px;margin:0" placeholder="Pesquisar por nome, endereço ou cidade" value="${Q}" onchange="Q=this.value;ug('map')"></div><br><div class="chips">${['all','Ponto parceiro','Totem Smart Amálgama','Unidade de recebimento'].map(c=>`<span class="chip ${MF==c?'on':''}" onclick="MF='${c}';ug('map')">${c=='all'?'Todos':c}</span>`).join('')}</div>
 <div class="grid two"><div class="c" style="padding:0;overflow:hidden">${msvg(L)}</div><div class="grid">${L.map(pc).join('')||'<div class="c">Nenhum ponto encontrado.</div>'}</div></div>`}
-function msvg(L,one){let s='<svg viewBox="0 0 600 320" style="width:100%;display:block;background:#e8e6da"><g stroke="#d4d1c2">';for(let i=0;i<600;i+=50)s+=`<path d="M${i} 0V320"/>`;for(let i=0;i<320;i+=50)s+=`<path d="M0 ${i}H600"/>`;s+='</g><path d="M0 190C150 150 250 250 380 190S520 110 600 150" fill="none" stroke="#b7d3d8" stroke-width="14"/><circle cx="300" cy="190" r="10" fill="#D8F55B" stroke="#123F32" stroke-width="3"><animate attributeName="r" values="10;14;10" dur="2s" repeatCount="indefinite"/></circle><text x="300" y="214" text-anchor="middle" font-size="11" font-weight="700" fill="#123F32">Você</text>';
-L.forEach(p=>{s+=`<g style="cursor:pointer" onclick="SEL='${p.id}';ug('map')"><circle cx="${p.x}" cy="${p.y}" r="${one?17:13}" fill="${p.t=='Totem Smart Amálgama'?'#25302C':'#123F32'}" stroke="#D8F55B" stroke-width="3"/><text x="${p.x}" y="${p.y+4}" text-anchor="middle" font-size="11" font-weight="800" fill="#D8F55B">${p.t[0]}</text></g>`});return s+'</svg>'}
+function msvg(L,one){let s='<svg viewBox="0 0 600 320" style="width:100%;display:block;background:#06170f"><g stroke="#123a2b">';for(let i=0;i<600;i+=50)s+=`<path d="M${i} 0V320"/>`;for(let i=0;i<320;i+=50)s+=`<path d="M0 ${i}H600"/>`;s+='</g><path d="M0 190C150 150 250 250 380 190S520 110 600 150" fill="none" stroke="#1f6b4e" stroke-opacity=".55" stroke-width="14"/><circle cx="300" cy="190" r="10" fill="#D8F55B" stroke="#123F32" stroke-width="3"><animate attributeName="r" values="10;14;10" dur="2s" repeatCount="indefinite"/></circle><text x="300" y="214" text-anchor="middle" font-size="11" font-weight="700" fill="#e7ff80">Você</text>';
+L.forEach(p=>{s+=`<g style="cursor:pointer" onclick="SEL='${p.id}';ug('map')"><circle cx="${p.x}" cy="${p.y}" r="${one?17:13}" fill="${p.t=='Totem Smart Amálgama'?'#0b2a1f':'#14684b'}" stroke="#D8F55B" stroke-width="3"/><text x="${p.x}" y="${p.y+4}" text-anchor="middle" font-size="11" font-weight="800" fill="#D8F55B">${p.t[0]}</text></g>`});return s+'</svg>'}
 function ptv(){const p=places().find(x=>x.id==SEL);return`<button class="btn s o" onclick="SEL=null;ug('map')">${ic('back',16)}Voltar</button><br><br><div class="uh"><div><span class="tag ${p.s=='Operacional'?'ok':'bad'}">${p.s}</span><h2 style="margin-top:12px">${p.n}</h2><p>${p.t}</p></div><div class="art fl" data-art="totem"></div></div><div class="grid two"><div class="c"><p>${p.e}<br>${p.h}<br>Capacidade: ${p.cap}</p><h3>Como descartar</h3><p>${p.i}</p><br><a class="btn x" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(p.e||p.n)}">${ic('pin',22)}Traçar rota</a></div><div class="c" style="padding:0;overflow:hidden">${msvg([p],1)}</div></div>`}
 const DS=['Recebida','Em análise','Encaminhada','Concluída','Arquivada'],TPD=['Descarte em lixo comum','Descarte em pia ou esgoto','Armazenamento inadequado','Outro'];
 function den(){const L=DB.den.filter(r=>r.by==ME.u.u || r.by==ME.u.id);return`<div class="uh"><div><h2>Ajude a proteger o meio ambiente.</h2><p>Identificou descarte irregular? Informe à equipe Smart Amálgama.</p></div><div class="fl" style="color:var(--l)">${ic('alert',110)}</div></div><div class="grid two"><div class="c"><label>TIPO DE IRREGULARIDADE</label><select id="d1">${TPD.map(t=>`<option>${t}</option>`).join('')}</select><label>ESTABELECIMENTO (SE CONHECIDO)</label><input id="d2"><label>ENDEREÇO OU LOCALIZAÇÃO</label><input id="d3"><button class="btn s o" style="margin-bottom:14px" onclick="geo()">${ic('pin',16)}Usar minha localização</button><label>O QUE ACONTECEU?</label><textarea id="d4" rows="3"></textarea><label>DATA APROXIMADA</label><input id="d5" type="date" max="${td(0)}"><label>FOTOS OU VÍDEOS (OPCIONAL)</label><input id="d6" type="file" multiple accept="image/*,video/*"><p class="mu">O envio de anexos será ativado após a configuração do armazenamento seguro.</p><label style="display:flex;gap:8px;align-items:center;color:var(--tx);font-size:14px"><input id="d7" type="checkbox" style="width:auto;margin:0">Ocultar meu nome na visualização administrativa</label><p class="mu">Por segurança, o sistema mantém o vínculo interno com a conta que enviou a denúncia.</p><br><button class="btn d x" onclick="sd()">Enviar denúncia</button></div>
@@ -447,7 +716,7 @@ en:{t1:'The right destination <em>starts with you.</em>',p1:'Dispose of your ama
 const SN=['Disponível','Pagamento pendente','Embalagem liberada','Aguardando depósito','Gaveta aberta','Gaveta fechada','Operação concluída','Compartimento cheio','Equipamento indisponível'];
 let L='pt',state=0,scr=1,cro='',mode='wel',tmr,idle,f={open:0,in:0,closed:0},op={},taps=0,run=false,R3,sc,cam,anim={pk:0,dr:0,k:0,b:0},W3,P3,X3,core,knot,pkg,dr,ar,pg,pp,pv;const N=500;
 function setL(l){L=l;document.querySelectorAll('#tot [data-i]').forEach(e=>e.innerHTML=T[l][e.dataset.i]);$('st').textContent=SN[state]}
-$('uf').innerHTML=UO;$('kp').innerHTML=[1,2,3,4,5,6,7,8,9,'⌫',0,'C'].map(k=>`<button onclick="key('${k}')">${k}</button>`).join('');
+$('uf').innerHTML=UO;$('kp').innerHTML=[1,2,3,4,5,6,7,8,9,'⌫',0,'C'].map(k=>`<button type="button" onclick="key('${k}')" aria-label="${k==='⌫'?'Apagar último dígito':k==='C'?'Limpar CRO':'Dígito '+k}">${k}</button>`).join('');
 function key(k){if(k=='⌫')cro=cro.slice(0,-1);else if(k=='C')cro='';else if(cro.length<6)cro+=k;$('cro').textContent=cro||'—'}
 function ss(i){state=i;$('st').textContent=SN[i];hw()}function msg(m){const e=$('msg');e.style.display='block';e.textContent=m;setTimeout(()=>e.style.display='none',2800)}
 function to(n){if(state>=7&&n>0)return;if([3,4,5,6].includes(n)&&!op.token)return;scr=n;document.querySelectorAll('#tot .scr').forEach(e=>e.classList.toggle('on',e.id=='s'+n));mode={1:'wel',4:'pack',5:'draw',6:'done'}[n]||'none';rst_();hw();if(n==3)pix()}
@@ -538,4 +807,152 @@ const _to=to;to=function(n){_to(n);prog(n)};
 
 function shrinkImage(f,max=900){return new Promise((ok,no)=>{const u=URL.createObjectURL(f),i=new Image();i.onload=()=>{const k=Math.min(1,max/Math.max(i.width,i.height)),c=document.createElement('canvas');c.width=Math.round(i.width*k);c.height=Math.round(i.height*k);c.getContext('2d').drawImage(i,0,0,c.width,c.height);let d=c.toDataURL('image/webp',.82);if(!d.startsWith('data:image/webp'))d=c.toDataURL('image/jpeg',.85);URL.revokeObjectURL(u);ok(d)};i.onerror=no;i.src=u})}
 async function autoUploadReward(){const f=$('rw_file')?.files?.[0],st=$('rw_upload_status');if(!f||!st)return;st.textContent='Enviando imagem…';const before=$('rw_image').value;await uploadRewardImage();if($('rw_image').value!==before)return;try{const d=await shrinkImage(f);$('rw_image').value=d;$('rw_preview').innerHTML='<img src="'+d+'" alt="Prévia">';st.textContent='Imagem anexada ao produto. Clique em Salvar recompensa.';toast('Imagem anexada ao produto.')}catch(e){st.textContent='Não foi possível processar a imagem.'}}
-</script></body></html>
+</script><script id="a11y-js">
+/* ===== Acessibilidade e navegação por teclado ===== */
+(function(){
+'use strict';
+const $=(s,r)=>(r||document).querySelector(s),$$=(s,r)=>Array.from((r||document).querySelectorAll(s));
+const FOCUSABLE='a[href],button:not([disabled]),input:not([disabled]):not([type=hidden]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])';
+const ICON_NAMES={back:'Voltar',arr:'Avançar',trash:'Excluir',gear:'Configurações',eye:'Visualizar',play:'Iniciar',full:'Tela cheia',lock:'Entrar',list:'Lista',users:'Pessoas',chart:'Gráfico',check:'Confirmar'};
+let uid=0,usingKeyboard=false;const mkid=p=>p+'-a11y-'+(++uid);
+const visible=el=>!!el&&el.getClientRects().length>0&&getComputedStyle(el).visibility!=='hidden';
+addEventListener('keydown',e=>{if(!['Shift','Control','Alt','Meta'].includes(e.key))usingKeyboard=true},true);
+addEventListener('pointerdown',()=>{usingKeyboard=false},true);
+
+/* região de avisos para leitores de tela */
+const live=document.createElement('div');live.id='a11y-live';live.className='sr-only';live.setAttribute('aria-live','polite');live.setAttribute('aria-atomic','true');document.body.appendChild(live);
+const announce=t=>{live.textContent='';setTimeout(()=>{live.textContent=t},60)};
+
+/* link "pular para o conteúdo" */
+const skip=document.createElement('a');skip.id='skip-a11y';skip.className='skip-a11y';skip.href='#conteudo';skip.textContent='Pular para o conteúdo principal';
+skip.addEventListener('click',e=>{e.preventDefault();const t=[$('#um'),$('#am')].find(visible)||$$('#tot .scr.on h1')[0]||$$('input,button',document.body).find(x=>visible(x)&&!x.closest('#skip-a11y'));if(t){if(!t.hasAttribute('tabindex')&&!/^(INPUT|BUTTON|SELECT|TEXTAREA|A)$/.test(t.tagName))t.setAttribute('tabindex','-1');t.focus()}});
+document.body.insertBefore(skip,document.body.firstChild);
+['um','am'].forEach(id=>{const m=document.getElementById(id);if(m){m.setAttribute('tabindex','-1');m.setAttribute('aria-label','Conteúdo principal')}});
+$$('nav').forEach((n,i)=>n.setAttribute('aria-label',n.closest('#adm')?'Menu do administrador':'Menu principal'));
+const tb=$('#ub');if(tb)tb.setAttribute('aria-label','Menu principal');
+const cv=$('#cv');if(cv)cv.setAttribute('aria-hidden','true');
+
+/* melhora elementos (roda de novo a cada atualização da tela) */
+function enhance(){
+  /* itens clicáveis que não são botões nem links de verdade */
+  $$('[onclick]').forEach(el=>{
+    const t=el.tagName;
+    if(/^(BUTTON|INPUT|SELECT|TEXTAREA|SUMMARY)$/.test(t)||(t==='A'&&el.hasAttribute('href')))return;
+    if(el.id==='md'||el.classList.contains('lg')||el.dataset.a11y)return;
+    el.dataset.a11y='1';
+    if(!el.hasAttribute('role'))el.setAttribute('role',(el.closest('nav,.tb')&&!/sair/i.test(el.textContent))?'link':'button');
+    if(!el.hasAttribute('tabindex'))el.setAttribute('tabindex','0');
+  });
+  /* menu: página atual */
+  $$('nav a,.tb a').forEach(a=>{if(a.classList.contains('on'))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+  /* filtros: estado marcado */
+  $$('.chip').forEach(c=>c.setAttribute('aria-pressed',c.classList.contains('on')?'true':'false'));
+  /* rótulos ligados aos campos */
+  $$('label').forEach(l=>{
+    if(l.htmlFor||l.querySelector('input,select,textarea'))return;
+    let c=l.nextElementSibling;
+    if(c&&!/^(INPUT|SELECT|TEXTAREA)$/.test(c.tagName)){const f=c.querySelectorAll('input,select,textarea');c=f.length===1?f[0]:null}
+    if(!c)return;
+    if(!c.id)c.id=mkid('campo');
+    l.htmlFor=c.id;
+  });
+  $$('input,select,textarea').forEach(c=>{
+    if(c.type==='hidden')return;
+    if((c.labels&&c.labels.length)||c.hasAttribute('aria-label')||c.hasAttribute('aria-labelledby'))return;
+    const n=c.getAttribute('placeholder')||c.getAttribute('title')||c.getAttribute('name');
+    if(n)c.setAttribute('aria-label',n);
+  });
+  /* botões e links só com ícone */
+  $$('button,a[role],[role=button]').forEach(b=>{
+    if(b.hasAttribute('aria-label')||b.hasAttribute('aria-labelledby'))return;
+    if(b.textContent.trim())return;
+    const n=b.getAttribute('title')||ICON_NAMES[(b.querySelector('[data-ic]')||{dataset:{}}).dataset.ic];
+    if(n)b.setAttribute('aria-label',n);
+  });
+  /* ícones e ilustrações são decorativos */
+  $$('svg:not([role]):not([aria-label]):not([aria-hidden])').forEach(s=>{s.setAttribute('aria-hidden','true');s.setAttribute('focusable','false')});
+  $$('img:not([alt])').forEach(i=>i.setAttribute('alt',''));
+  $$('th:not([scope])').forEach(t=>t.setAttribute('scope','col'));
+  /* QR codes e Pix são imagens com descrição */
+  const q=$('#registration-qr');if(q&&!q.hasAttribute('role')){q.setAttribute('role','img');q.setAttribute('aria-label','QR Code para criar sua conta no site Smart Amálgama')}
+  const p=$('#pix');if(p&&!p.hasAttribute('role')){p.setAttribute('role','img');p.setAttribute('aria-label','QR Code do Pix')}
+  /* título principal da página (o primeiro h2 do conteúdo vira nível 1) */
+  [$('#um'),$('#am')].forEach(m=>{if(m&&!m.querySelector('h1')){const h=m.querySelector('h2');if(h&&!h.hasAttribute('aria-level')){h.setAttribute('role','heading');h.setAttribute('aria-level','1')}}});
+}
+
+/* ativar com Enter ou Espaço os itens que não são botões nativos */
+addEventListener('keydown',e=>{
+  const t=e.target;
+  if(!t||!t.dataset||!t.dataset.a11y)return;
+  if(e.key==='Enter'||(e.key===' '&&t.getAttribute('role')==='button')){e.preventDefault();t.click()}
+});
+
+/* janela (modal): foco, Esc, Tab preso e fundo bloqueado */
+const md=$('#md'),mc=$('#mc');let wasOpen=false,lastActive=null;
+const modalOpen=()=>md.classList.contains('on');
+md.setAttribute('role','dialog');md.setAttribute('aria-modal','true');
+function setInert(on){let node=md;while(node&&node!==document.documentElement){const par=node.parentElement;if(!par)break;Array.from(par.children).forEach(s=>{if(s===node||/^(SCRIPT|STYLE|LINK)$/.test(s.tagName)||s.id==='ts'||s.id==='a11y-live')return;if(on){if(!s.hasAttribute('inert')){s.setAttribute('inert','');s.dataset.inertModal='1'}}else if(s.dataset.inertModal){s.removeAttribute('inert');delete s.dataset.inertModal}});if(par===document.body)break;node=par}}
+function labelDialog(){const h=$('h2,h3',mc);if(h){if(!h.id)h.id=mkid('dialogo');md.setAttribute('aria-labelledby',h.id);md.removeAttribute('aria-label')}else{md.removeAttribute('aria-labelledby');md.setAttribute('aria-label','Janela')}}
+function focusInModal(){requestAnimationFrame(()=>{if(mc.contains(document.activeElement))return;const t=$('[autofocus]',mc)||$$(FOCUSABLE,mc).find(visible);if(t)t.focus({preventScroll:true});else{mc.setAttribute('tabindex','-1');mc.focus({preventScroll:true})}})}
+new MutationObserver(()=>{
+  if(modalOpen()&&!wasOpen){wasOpen=true;lastActive=document.activeElement;labelDialog();setInert(true);focusInModal()}
+  else if(!modalOpen()&&wasOpen){wasOpen=false;setInert(false);const r=lastActive;lastActive=null;requestAnimationFrame(()=>{if(r&&document.contains(r)&&visible(r))r.focus({preventScroll:true})})}
+}).observe(md,{attributes:true,attributeFilter:['class']});
+new MutationObserver(()=>{if(modalOpen()){labelDialog();focusInModal()}}).observe(mc,{childList:true});
+addEventListener('keydown',e=>{
+  if(!modalOpen())return;
+  if(e.key==='Escape'){e.preventDefault();e.stopPropagation();typeof cm==='function'?cm():md.classList.remove('on');return}
+  if(e.key==='Tab'){const f=$$(FOCUSABLE,mc).filter(visible);if(!f.length){e.preventDefault();return}const a=f[0],z=f[f.length-1];if(e.shiftKey&&(document.activeElement===a||!mc.contains(document.activeElement))){e.preventDefault();z.focus()}else if(!e.shiftKey&&(document.activeElement===z||!mc.contains(document.activeElement))){e.preventDefault();a.focus()}}
+},true);
+
+/* não perder o foco quando a tela é redesenhada */
+let last=null;
+addEventListener('focusin',e=>{const el=e.target,c=el.closest&&el.closest('#un,#an,#ub,#um,#am');if(c)last={c:c.id,text:(el.textContent||'').trim().slice(0,80),tag:el.tagName,idx:$$(FOCUSABLE,c).indexOf(el)}});
+['un','an','ub','um','am'].forEach(id=>{
+  const c=document.getElementById(id);if(!c)return;
+  new MutationObserver(()=>{
+    requestAnimationFrame(()=>{
+      enhance();
+      const act=document.activeElement;
+      if(id==='um'||id==='am'){const h=$('h1,h2',c);if(h&&visible(c)&&c.dataset.t!==h.textContent){c.dataset.t=h.textContent;announce(h.textContent.trim());document.title='Smart Amálgama — '+h.textContent.trim()}}
+      if(!usingKeyboard||!last||last.c!==id||(act&&act!==document.body&&document.contains(act)))return;
+      const list=$$(FOCUSABLE,c);
+      const t=list.find(x=>(x.textContent||'').trim().slice(0,80)===last.text&&x.tagName===last.tag)||list[Math.min(last.idx,list.length-1)];
+      if(t)t.focus({preventScroll:true});else if(/^(um|am)$/.test(id))c.focus({preventScroll:true});
+    });
+  }).observe(c,{childList:true});
+});
+
+/* totem: telas ocultas, avisos e teclado físico */
+$$('#tot .scr').forEach(s=>new MutationObserver(()=>{
+  if(!s.classList.contains('on')||!visible(s))return;
+  const h=$('h1',s);if(h){h.setAttribute('tabindex','-1');if(usingKeyboard)h.focus({preventScroll:true});announce(h.textContent.trim())}
+}).observe(s,{attributes:true,attributeFilter:['class']}));
+const cro=$('#cro');if(cro){cro.setAttribute('role','status');cro.setAttribute('aria-live','polite');cro.setAttribute('aria-label','CRO digitado')}
+addEventListener('keydown',e=>{
+  const tot=$('#tot');if(!tot||tot.classList.contains('hid')||modalOpen())return;
+  if(typeof scr==='undefined'||typeof key!=='function')return;
+  const t=e.target,tag=t&&t.tagName;if(/^(INPUT|TEXTAREA)$/.test(tag)||(t&&t.isContentEditable)||e.ctrlKey||e.metaKey||e.altKey)return;
+  if(scr===2){
+    if(/^[0-9]$/.test(e.key)){e.preventDefault();key(e.key);return}
+    if(e.key==='Backspace'){e.preventDefault();key('⌫');return}
+    if(e.key==='Delete'){e.preventDefault();key('C');return}
+  }
+  if((scr===2||scr===7)&&e.key==='Enter'&&!/^(BUTTON|SELECT|A)$/.test(tag)&&typeof ident==='function'){e.preventDefault();ident()}
+});
+
+enhance();
+new MutationObserver(m=>{if(m.some(x=>!live.contains(x.target)&&x.target!==live))requestAnimationFrame(enhance)}).observe(document.body,{childList:true,subtree:true});
+})();
+</script>
+<script id="v4-js">
+/* brilho do vidro líquido acompanha o ponteiro */
+(function(){'use strict';
+var SEL='.btn,.eco-hero-btn,#usr nav a,#adm nav a,.tb a,.chip,.etabs button,.queue a,#tot .keys button',raf=0,lastEl=null,px=0,py=0;
+function move(e){px=e.clientX;py=e.clientY;lastEl=e.target&&e.target.closest?e.target.closest(SEL):null;if(!lastEl||raf)return;
+  raf=requestAnimationFrame(function(){raf=0;if(!lastEl)return;var r=lastEl.getBoundingClientRect();lastEl.style.setProperty('--mx',((px-r.left)/r.width*100).toFixed(1)+'%');lastEl.style.setProperty('--my',((py-r.top)/r.height*100).toFixed(1)+'%')})}
+addEventListener('pointermove',move,{passive:true});
+var m=document.querySelector('meta[name=theme-color]');if(!m){m=document.createElement('meta');m.name='theme-color';document.head.appendChild(m)}m.content='#030c08';
+})();
+</script>
+</body></html>
